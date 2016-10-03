@@ -1,6 +1,8 @@
 // original provided array with duplicate names
 var duplicatesArray = ['Nick', 'jake', 'RAY', 'Kate', 'Nick', 'Jeremy', 'nick', 'AMOL', 'rAY', 'VIANNEY', 'Shilpika', 'nick', 'THOMAS', 'tom', 'james', 'JERM', 'amOl', 'kate', 'SCOTT', 'Jenifer', 'bill', 'jenny', 'STEVEN']
 
+duplicatesArray.sort(console.log)
+
 // loop through duplicatesArray, remove duplicates including identical names
 for(i = 0; i < duplicatesArray.length; i++) {
 	var i = duplicatesArray.indexOf(duplicatesArray[i])
@@ -8,6 +10,7 @@ for(i = 0; i < duplicatesArray.length; i++) {
 		duplicatesArray.splice(i, 1)
 	}
 }
+
 // print to console
 console.log(duplicatesArray)
 
