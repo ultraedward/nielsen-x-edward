@@ -4,6 +4,7 @@ var duplicatesArray = ['Nick', 'jake', 'RAY', 'Kate', 'Nick', 'Jeremy', 'nick', 
 duplicatesArray.sort(console.log)
 
 // loop through duplicatesArray, remove duplicates including identical names
+// for an unknown reason, names are missing from filtered array
 for(i = 0; i < duplicatesArray.length; i++) {
 	var i = duplicatesArray.indexOf(duplicatesArray[i])
 	if(i != -1) {
